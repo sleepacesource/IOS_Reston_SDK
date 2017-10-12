@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignalViewController">
+            <connections>
+                <outlet property="breathView" destination="1eF-U3-py0" id="GJB-v3-7th"/>
+                <outlet property="heartView" destination="Ynu-LK-ik0" id="vNQ-ry-v9C"/>
+                <outlet property="label1" destination="egg-Se-c4G" id="gh3-fj-djm"/>
+                <outlet property="label2" destination="ms4-cg-55a" id="NCx-ou-QGX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="心跳信号强度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egg-Se-c4G">
+                    <rect key="frame" x="16" y="65" width="104" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Xau-Qn-VlG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ynu-LK-ik0">
+                    <rect key="frame" x="5" y="92" width="310" height="175"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="175" id="ghB-e4-j1X"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eF-U3-py0">
+                    <rect key="frame" x="5" y="318" width="310" height="188"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="188" id="MUi-nG-k4S"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="呼吸信号强度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ms4-cg-55a">
+                    <rect key="frame" x="16" y="287" width="104" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="b7j-CM-Q12"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ms4-cg-55a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="4El-Qg-dt2"/>
+                <constraint firstItem="ms4-cg-55a" firstAttribute="top" secondItem="Ynu-LK-ik0" secondAttribute="bottom" constant="20" id="HmM-6l-DKv"/>
+                <constraint firstAttribute="trailing" secondItem="Ynu-LK-ik0" secondAttribute="trailing" constant="5" id="JMD-vc-uXd"/>
+                <constraint firstItem="egg-Se-c4G" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="cWW-jS-9w5"/>
+                <constraint firstItem="egg-Se-c4G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="naW-hA-Sqz"/>
+                <constraint firstAttribute="trailing" secondItem="1eF-U3-py0" secondAttribute="trailing" constant="5" id="oJv-Ad-8Kv"/>
+                <constraint firstItem="1eF-U3-py0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="p7g-Kk-nIn"/>
+                <constraint firstItem="Ynu-LK-ik0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="pC3-fz-AMt"/>
+                <constraint firstItem="Ynu-LK-ik0" firstAttribute="top" secondItem="egg-Se-c4G" secondAttribute="bottom" constant="6" id="pNu-bq-zb4"/>
+                <constraint firstItem="1eF-U3-py0" firstAttribute="top" secondItem="ms4-cg-55a" secondAttribute="bottom" constant="10" id="tuk-P9-tnR"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
