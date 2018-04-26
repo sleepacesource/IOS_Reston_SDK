@@ -150,7 +150,7 @@
     obj.MdLightSleepPerc=[NSNumber numberWithInteger:analysis.lightSleepPerc];
     obj.MdWakeSleepPerc=[NSNumber numberWithInteger:analysis.wakeSleepPerc];;
     obj.MdWakeUpTime=[NSNumber numberWithInteger:analysis.wakeAndLeaveBedBeforeAllTime];
-    obj.wake_times=[NSNumber numberWithInteger:analysis.wake_Times];
+    obj.wake_times=[NSNumber numberWithInteger:analysis.wakeTimes];
     obj.tdcs=[NSNumber numberWithInteger:analysis.bodyMovementTimes];
     obj.fscs=[NSNumber numberWithInteger:analysis.trunOverTimes];
     obj.pjxl=[NSNumber numberWithInteger:analysis.averageHeartBeatRate];
