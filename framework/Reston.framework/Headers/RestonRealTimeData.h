@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <BluetoothManager/SLPDataTransferDef.h>
 
 @interface RestonRealTimeData : NSObject
 
-@property (nonatomic,assign) BOOL awakFlag;//清醒标志
+@property (nonatomic,assign) BOOL awakeFlag;//清醒标志
 @property (nonatomic,assign) BOOL asleepFlag;//入睡标志
 @property (nonatomic,assign) UInt8 breathRate;//呼吸率
 @property (nonatomic,assign) UInt8 heartRate;//心率

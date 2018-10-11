@@ -92,6 +92,7 @@
 		26C67B3B1F34616400A835DB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 26C67B371F34616400A835DB /* LICENSE */; };
 		26C67B3C1F34616400A835DB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C67B391F34616400A835DB /* MBProgressHUD.m */; };
 		26C67B3D1F34616400A835DB /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = 26C67B3A1F34616400A835DB /* README.mdown */; };
+		26DE0CD2216EF6F400C00DA3 /* SLPCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DE0CD1216EF6F400C00DA3 /* SLPCommon.framework */; };
 		26FA317D1F30702D009C4012 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26FA317F1F30702D009C4012 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -248,6 +249,7 @@
 		26C67B381F34616400A835DB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		26C67B391F34616400A835DB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		26C67B3A1F34616400A835DB /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		26DE0CD1216EF6F400C00DA3 /* SLPCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SLPCommon.framework; sourceTree = "<group>"; };
 		26FA317E1F30702D009C4012 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		26FA31801F307037009C4012 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -260,6 +262,7 @@
 				269CDAEB1F5E74E900D20D8A /* Reston.framework in Frameworks */,
 				2675237F1F32B52F00BB304C /* libc++.tbd in Frameworks */,
 				2656285C1F43DFE6000CC012 /* BluetoothManager.framework in Frameworks */,
+				26DE0CD2216EF6F400C00DA3 /* SLPCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				26C67B361F34616400A835DB /* MBProgressHUD */,
+				26DE0CD1216EF6F400C00DA3 /* SLPCommon.framework */,
 				2656285A1F43DFE6000CC012 /* BluetoothManager.framework */,
 				269CDAEA1F5E74E900D20D8A /* Reston.framework */,
 				262E22681F26D6A300445451 /* RestonSDKDemo */,

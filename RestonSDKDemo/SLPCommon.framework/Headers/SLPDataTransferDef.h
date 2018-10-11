@@ -55,7 +55,7 @@ typedef NS_ENUM(NSInteger,SLPDeviceTypes) {
     SLPDeviceType_Z1 = 1,
     SLPDeviceType_Nox,
     SLPDeviceType_Pillow,
-    SLPDeviceType_WIFIReston,
+    SLPDeviceType_WIFIReston,//Z300
     SLPDeviceType_BLE_SingleMattress, //5
     SLPDeviceType_WIFI_SingleMattress,
     SLPDeviceType_BLE_DoubleMattress,
@@ -68,6 +68,8 @@ typedef NS_ENUM(NSInteger,SLPDeviceTypes) {
     SLPDeviceType_Milky2T = 0x0011,
     SLPDeviceType_Patch = 0x0012, // 眼罩
     SLPDeviceType_Z4 = 0x0016,//22
+    SLPDeviceType_Z5 = 0x001A,///z5
+    SLPDeviceType_Z6 = 0x001B,///z6
 };
 
 //样本数据的人群类型 目前只有男性和女性
@@ -113,8 +115,11 @@ typedef NS_ENUM(UInt8,SLPCollectionDataFinishMode) {
     SLPCollectionDataFinishMode_Wrong,//错误结束(如:供电不足、系统异常)
 };
 
+#define kTCPSpecialID (0xC350)//新TCP协议中的特殊标识符
 #define kLongReportMinRecortCount (180)//长报告最短时间
 
 //post消息放在dictionary中的key
 #define kNotificationPostData @"postData"//post的数据
+
 #endif /* SLPDataTransferDef_h */
+

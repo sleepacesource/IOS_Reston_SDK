@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "SLPBLEDef.h"
-#import "SLPDataTransferDef.h"
+#import <SLPCommon/SLPCommon.h>
 
 
 @class CBCentralManager;

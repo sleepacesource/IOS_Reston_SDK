@@ -29,6 +29,10 @@ typedef NS_ENUM(NSInteger,Reston_ScoreDeductibleTypes) {
     Reston_ScoreDeductibleType_Invalid,
 };
 
+@interface SLPRestonHistoryData : SLPHistoryData
+
+@end
+
 @interface Z1_HistoryDataDetail : HistoryDataDetail
 @property (nonatomic,strong) NSArray *sleepStatusArray;//睡眠状态数组
 @property (nonatomic,strong) NSArray *sleepStatusValueArray;//睡眠状态附加数组

@@ -10,12 +10,12 @@
 #import "SLPDataTransferDef.h"
 
 //TCP或蓝牙的帧类型
-typedef enum {
+typedef NS_ENUM(NSInteger, SLPFramTypes) {
     SLPFramType_ACK = 0,
     SLPFramType_Post,
     SLPFramType_Request,
     SLPFramType_Response
-}SLPFramTypes;
+};
 
 typedef NS_ENUM(NSInteger,SLPDeviceCategory) {
     SLPDeviceCategory_None,

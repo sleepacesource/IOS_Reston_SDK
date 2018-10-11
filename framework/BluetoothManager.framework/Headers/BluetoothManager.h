@@ -8,13 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-#import "SLPDataTransferHeads.h"
+#import "SLPHistoryData.h"
 #import "SLPBLEDef.h"
 #import "SLPBLEManager.h"
 #import "SLPBLEManager+Scan.h"
-
 #define kManagerVersion  @"3.0.0";
-
-// In this header, you should import all the public headers of your framework using statements like #import <BluetoothManager/PublicHeader.h>
-
-

@@ -270,7 +270,7 @@
     [[NSNotificationCenter defaultCenter]addObserverForName:kNotificationNameBLERestonRealtimeData object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
         
         RestonRealTimeData *realData= [note.userInfo objectForKey:kNotificationPostData];
-        NSLog(@"sleep status->%d,heartBeat-->%d,breath-->%d",realData.status,realData.heartRate,realData.breathRate);
+        NSLog(@"sleep status->%d,heartBeat-->%d,breath-->%d,awakeflag-->%d,sleepFlag-->%d",realData.status,realData.heartRate,realData.breathRate,realData.awakeFlag,realData.asleepFlag);
         NSString *b_value=[NSString stringWithFormat:@"%d %@",realData.heartRate,NSLocalizedString(@"unit_respiration", nil)];
         NSString *h_value=[NSString stringWithFormat:@"%d %@",realData.breathRate,NSLocalizedString(@"unit_heart", nil)];
         NSString *statusString;

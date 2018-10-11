@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "SLPDataTransferDef.h"
+#import <SLPCommon/SLPCommon.h>
 
 @class SLPBLEBaseSendPacket;
 @protocol SLPBLEBaseSendPacketDelegate <NSObject>
