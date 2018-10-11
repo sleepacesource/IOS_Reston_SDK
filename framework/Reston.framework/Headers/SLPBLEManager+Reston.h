@@ -45,6 +45,7 @@
  */
 - (void)reston:(CBPeripheral *)peripheral getDeviceVersionWithTimeout:(CGFloat)timeout
       callback:(SLPTransforCallback)handle;
+
 /*获取设备的环境数据
  回调返回RestonEnvironmentalData
  */
@@ -119,7 +120,7 @@
  type: 样本数据的人群类型
  startTime:开始时间戳
  endTime:结束时间戳 一般传当前时间
- eachhandle:每次获取到一段报告回调一次 回调返回SLPHistoryData
+ eachhandle:每次获取到一段报告回调一次 回调返回SLPRestonHistoryData
  finishHandle:最终结束的回调
  */
 - (void)reston:(CBPeripheral *)peripheral personType:(SLPSleepPersonTypes)type
