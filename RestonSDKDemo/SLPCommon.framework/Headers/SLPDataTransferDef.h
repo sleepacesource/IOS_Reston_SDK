@@ -33,6 +33,7 @@ typedef NS_ENUM(NSInteger,SLPDataTransferStatus) {
     SLPDataTransferStatus_Failed = -3,// 失败
     SLPDataTransferStatus_ConnectionDisabled = -4,//连接禁用了 或者网络断开了
     SLPDataTransferStatus_ParameterError = -5,//参数错误
+    SLPDataTransferStatus_ConfigMode = -6,//正在配置模式
 };
 
 /*蓝牙或TCP请求时的回调
@@ -70,6 +71,22 @@ typedef NS_ENUM(NSInteger,SLPDeviceTypes) {
     SLPDeviceType_Z4 = 0x0016,//22
     SLPDeviceType_Z5 = 0x001A,///z5
     SLPDeviceType_Z6 = 0x001B,///z6
+    SLPDeviceType_Sal = 0x0017, // 香薰灯 WiFi版
+    SLPDeviceType_Sal_Ble = 0x0018, // 香薰灯 蓝牙版
+    SLPDeviceType_EW201B = 0x001D,//唤醒灯 蓝牙版
+    SLPDeviceType_EW201W = 0x001E,//唤醒灯 WiFi版
+    SLPDeviceType_Binatone = 0x0021,//贝纳通
+    SLPDeviceType_P3 = 0x22,//p300
+    SLPDeviceType_TWP2 = 0x25,//TWP-2
+    SLPDeviceType_M800 = 0x26, // M800
+    SLPDeviceType_SN913E = 0x2C, // SN913E
+    SLPDeviceType_BM8701_2 = 0x31, // BM8701-2
+    SLPDeviceType_BG001A = 0x32, // BG001A
+    SLPDeviceType_M8701W = 0x34, // M8701W
+    SLPDeviceType_EW202W = 0x35, // EW202W
+    SLPDeviceType_BM8701 = 0x8099, // BM8701
+    SLPDeviceType_FH601W = 0x8013, // FH601W
+    
 };
 
 //样本数据的人群类型 目前只有男性和女性

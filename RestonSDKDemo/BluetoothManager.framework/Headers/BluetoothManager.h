@@ -10,6 +10,7 @@
 
 #import "SLPHistoryData.h"
 #import "SLPBLEDef.h"
+#import "SLPOriginalDataALG.h"
 #import "SLPBLEManager.h"
 #import "SLPBLEManager+Scan.h"
-#define kManagerVersion  @"3.0.0";
+#define kManagerVersion  @"3.0.1";

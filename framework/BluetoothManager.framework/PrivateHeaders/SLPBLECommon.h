@@ -12,6 +12,7 @@ typedef NS_ENUM(NSInteger,SLPBLEProtocalType){
     SLPBLEProtocalType_Original = 0,
     SLPBLEProtocalType_Promotional,
     SLPBLEProtocalType_Sepcial,
+    SLPBLEProtocalType_NOX,
 };
 
 typedef NS_ENUM(UInt8, BLE_RespondsCode) {
@@ -92,9 +93,11 @@ typedef NS_ENUM(NSInteger,SLPBLEMessagetUniqTypes) {
     SLPBLEMessagetUniqType_PillowHistorySummaryQuery,//历史数据的概要查询
     SLPBLEMessagetUniqType_PillowHistoryBoundaryQuery,//历史数据的边界查询
     SLPBLEMessagetUniqType_PillowDownloadHistoryData,//历史数据下载
+    SLPBLEMessagetUniqType_PillowDownloadHistoryDataAdditional,//带温湿度的历史数据下载
     SLPBLEMessagetUniqType_PillowPostStatus,//控制盒状态上报  设备->APP
     SLPBLEMessagetUniqType_PillowUpgradeSummery,//概要上传请求
     SLPBLEMessagetUniqType_PillowUpgradeContent,//内容上传请求
+    SLPBLEMessagetUniqType_PillowGetEnviormentData,//获取环境数据
     
     //Mattress
     SLPBLEMessagetUniqType_Mattress_GetDeviceInfo,
@@ -121,6 +124,7 @@ typedef NS_ENUM(NSInteger,SLPBLEMessagetUniqTypes) {
     SLPBLEMessagetUniqType_NOX2MusicOperation,//音乐操作
     SLPBLEMessagetUniqType_NOX2SceneOperation,//场景操作
     SLPBLEMessagetUniqType_NOX2SleepAidOperation,//助眠操作
+    SLPBLEMessagetUniqType_BleNoxGetAlarmList, //获取闹钟列表
     SLPBLEMessagetUniqType_NOX2AlarmOperation,//闹铃操作
     SLPBLEMessagetUniqType_NOX2PreviewOperation,//预览操作
     SLPBLEMessagetUniqType_NOX2PlayOperation,//预览操作
@@ -140,6 +144,92 @@ typedef NS_ENUM(NSInteger,SLPBLEMessagetUniqTypes) {
     SLPBLEMessagetUniqType_NOX2GetDeviceLog,
     SLPBLEMessagetUniqType_NOX2ConfigurePIN,//配置PIN码
     SLPBLEMessagetUniqType_NOX2GetPIN,//获取PIN码
+    //SA1001-2
+    SLPBLEMessagetUniqType_SABTimeCalibration,//时间校准
+    SLPBLEMessagetUniqType_SABFactoryReset,//恢复出厂设置
+    SLPBLEMessagetUniqType_SABGetSystemInfo,//获取系统信息
+    SLPBLEMessagetUniqType_SABGetVersionInfo,//获取版本信息
+    SLPBLEMessagetUniqType_SABConfigureUserInfo,//配置用户信息
+    SLPBLEMessagetUniqType_SABConfigureSleepScene,//睡眠场景配置
+    SLPBLEMessagetUniqType_SABConfigureLightScene,//照明场景配置
+    SLPBLEMessagetUniqType_SABConfigureCommonScene,//普通设备场景配置
+    SLPBLEMessagetUniqType_SABConfigureMultyScene,//多个场景同时配置
+    SLPBLEMessagetUniqType_SABConfigureAlarm,//闹铃配置
+    SLPBLEMessagetUniqType_SABAromaOperation,//香薰控制
+    SLPBLEMessagetUniqType_SABLightOperation,//灯光操作
+    SLPBLEMessagetUniqType_SABMusicOperation,//音乐操作
+    SLPBLEMessagetUniqType_SABSceneOperation,//场景操作
+    SLPBLEMessagetUniqType_SABSleepAidOperation,//助眠操作
+    SLPBLEMessagetUniqType_SABAlarmOperation,//闹铃操作
+    SLPBLEMessagetUniqType_SABPreviewOperation,//预览操作
+    SLPBLEMessagetUniqType_SABPlayOperation,//预览操作
+    SLPBLEMessagetUniqType_SABGetDeviceStatus,//获取设备状态
+    SLPBLEMessagetUniqType_SABGetOperatingMode,//获取工作模式
+    SLPBLEMessagetUniqType_SABPostOperatingMode,//post工作模式
+    SLPBLEMessagetUniqType_SABGetMusicList,//获取音乐列表
+    SLPBLEMessagetUniqType_SABGetProgressOfUPgrade,//获取升级进度
+    SLPBLEMessagetUniqType_SABUPgradeSummaryUpload,//升级概要信息上传
+    SLPBLEMessagetUniqType_SABUPgradeContrentUpload,//升级包上传
+    SLPBLEMessagetUniqType_SABGestureOperation,//手势操作
+    SLPBLEMessagetUniqType_SABConfigureWiFi,//配置WiFi
+    SLPBLEMessagetUniqType_SABNightLightSetting,//小夜灯设置
+    SLPBLEMessagetUniqType_SABConfigureAlbum,//配置专辑列表
+    SLPBLEMessagetUniqType_SABGetDeviceLog,
+    SLPBLEMessagetUniqType_SABConfigurePIN,//配置PIN码
+    SLPBLEMessagetUniqType_SABGetPIN,//获取PIN码
+    SLPBLEMessagetUniqType_SABConfigTimeAroma,//配置定时香薰
+    SLPBLEMessagetUniqType_SABConfigCenterKey,//配置中心键
+    SLPBLEMessagetUniqType_SABGetAlarmList,//获取闹钟列表
+    SLPBLEMessagetUniqType_SABGetTimeAroma,//获取定时香薰
+    SLPBLEMessagetUniqType_SABGetCenterKey,//获取中心键
+    SLPBLEMessagetUniqType_SABGetPINCode,//获取PIN码
+    
+    
+    //Binatone
+    SLPBLEMessagetUniqType_BinatoneLogin,//reston登录
+    SLPBLEMessagetUniqType_BinatoneSetSmartWake,//设置智能唤醒
+    SLPBLEMessagetUniqType_BinatoneGetSmartWake,//获取智能唤醒
+    SLPBLEMessagetUniqType_BinatoneSetAudoCollecting,//设置自动采集
+    SLPBLEMessagetUniqType_BinatoneGetAudoCollecting,//获取自动采集
+    SLPBLEMessagetUniqType_BinatoneGetBattery,//获取电量
+    SLPBLEMessagetUniqType_BinatoneGetDeviceInfo,//获取设备信息
+    SLPBLEMessagetUniqType_BinatoneSetCollectionStatus,//设置采集状态
+    SLPBLEMessagetUniqType_BinatoneGetCollectionStatus,//获取采集状态
+    SLPBLEMessagetUniqType_BinatoneGetDeviceVersion,//获取设备版本信息
+    SLPBLEMessagetUniqType_BinatoneNotify,//通知设备开始上报数据
+    SLPBLEMessagetUniqType_BinatonePostRealTimeData,//设备向客户端上报实时数据 设备->APP
+    SLPBLEMessagetUniqType_BinatonePostOriginalData,//设备向客户端上报原始数据 设备->APP
+    SLPBLEMessagetUniqType_BinatoneHistorySummaryQuery,//历史数据的概要查询
+    SLPBLEMessagetUniqType_BinatoneHistoryBoundaryQuery,//历史数据的边界查询
+    SLPBLEMessagetUniqType_BinatoneDownloadHistoryData,//历史数据下载
+    SLPBLEMessagetUniqType_BinatoneDownloadHistoryDataAdditional,//带温湿度的历史数据下载
+    SLPBLEMessagetUniqType_BinatonePostStatus,//控制盒状态上报  设备->APP
+    SLPBLEMessagetUniqType_BinatoneUpgradeSummery,//概要上传请求
+    SLPBLEMessagetUniqType_BinatoneUpgradeContent,//内容上传请求
+    SLPBLEMessagetUniqType_BinatoneGetEnviormentData,//获取环境数据
+    SLPBLEMessagetUniqType_BinatoneGetBirthDate,//获取出生日期
+    SLPBLEMessagetUniqType_BinatoneSetBirthDate,//设置生日日期
+    SLPBLEMessagetUniqType_BinatoneGetAlarm,//获取警报
+    SLPBLEMessagetUniqType_BinatoneSetAlarm,//设置警报
+    SLPBLEMessagetUniqType_BinatoneGetMAC,//获取mac地址
+    SLPBLEMessagetUniqType_BinatoneRestoreFactorySetting,//恢复出厂设置
+    
+    //BLEWIFI配置
+    SLPBLEMessagetUniqType_BLEWifiBLEProProtocolConfig,//蓝牙新协议格式的bleWifi配置
+    SLPBLEMessagetUniqType_BLEWifiTCPProtocolConfig,//TCP协议格式的bleWifi配置
+    SLPBLEMessagetUniqType_BLEWifiConfigGetDeviceInfo,//获取设备信息
+    SLPBLEMessagetUniqType_BLEWifiConfigGetHTTPServerAddress,//获取服务器HTTP地址
+    
+    //BLEWIFI配置-NOX
+    SLPBLEMessagetUniqType_BLEWifiTCPProtocolNOXConfig,//NOX TCP协议格式的bleWifi配置
+    SLPBLEMessagetUniqType_BLEWifiNOXConfigGetDeviceInfo,//获取设备信息
+    SLPBLEMessagetUniqType_BLEWifiNOXConfigGetHTTPServerAddress,//获取服务器HTTP地址
+    SLPBLEMessagetUniqType_BLEWifiNOXConfigGetWIFIStatus,//获取wifi连接状态
+
+    //通用ID
+    SLPBLEMessagetUniqType_ProtocolOne,//蓝牙最老版协议 比如Reston Pillow
+    SLPBLEMessagetUniqType_ProtocolTwo,//蓝牙新版协议 枕头以及后面的nox2
+    SLPBLEMessagetUniqType_ProtocolThree,//有些蓝牙设备还用了TCP的协议
     
     SLPBLEMessagetUniqType_None,
 };
@@ -232,8 +322,18 @@ typedef NS_ENUM(NSInteger,SLPBLERestonPostMessageType) {
     SLPBLERestonPostMessageType_RestonPostStatus = 0x05//Reston 控制盒状态上报
 };
 
+typedef NS_ENUM(NSInteger,SLPBinatonePostMessageType) {
+    SLPBinatonePostMessageType_RealtimeData = 0x07,//binatone 实时数据
+    SLPBinatonePostMessageType_OriginalData = 0x1D,//binatone 原始数据
+    SLPBinatonePostMessageType_RestonPostStatus = 0x05//binatone 控制盒状态上报
+};
+
 typedef NS_ENUM(NSInteger,SLPBLENoxPostMessageType) {
     SLPBLENoxPostMessageType_WorkStatus = 0x41,//工作模式
+};
+
+typedef NS_ENUM(NSInteger,SLPBLESA1001_2PostMessageType) {
+    SLPBLESA1001_2PostMessageType_WorkStatus = 0x41,//工作模式
 };
 
 typedef NS_ENUM(UInt8, SceneOperation) {

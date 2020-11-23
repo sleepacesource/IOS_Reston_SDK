@@ -37,5 +37,13 @@
 
 //查询接口
 - (SLPDeviceTypes)deviceTypeOfPeripheral:(CBPeripheral *)peripheral;
+- (NSString *)deviceNameOfPeripheral:(CBPeripheral *)peripheral;
 - (NSInteger)deviceTextureOfPeripheral:(CBPeripheral *)peripheral;
+
+//通过设备名称查询蓝牙句柄 不建议使用
+- (CBPeripheral *)_peripheralOfDeviceName:(NSString *)deviceName;
+- (void)_fillPeripheral:(CBPeripheral *)peripheral
+         withDeviceName:(NSString *)deviceName
+             deviceType:(int)deviceType protocolType:(int)protocolType
+                withWriteWithResponse:(BOOL)writeWithResponse;
 @end
