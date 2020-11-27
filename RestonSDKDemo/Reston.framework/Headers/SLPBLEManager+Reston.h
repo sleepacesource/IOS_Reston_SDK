@@ -76,7 +76,7 @@
       callback:(SLPTransforCallback)handle;
 
 /*获取自动采集时间
-  回调返回 RestonAutoCollection
+  回调返回 RestonCollectionStatus
  */
 - (void)reston:(CBPeripheral *)peripheral getAutoCollectionTimeout:(CGFloat)timeout completion:(SLPTransforCallback)handle;
 

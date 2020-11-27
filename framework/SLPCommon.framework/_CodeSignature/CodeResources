@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/SLPCommon.h</key>
 		<data>
-		ilW73oOA8FegCooprwvH65ijP7I=
+		nPvszMDZVUdkzb/6GDIEZZG7Mhw=
 		</data>
 		<key>Headers/SLPDataTransferCommon.h</key>
 		<data>
@@ -47,10 +47,6 @@
 		<key>Headers/SLPDeviceUpdateVersion.h</key>
 		<data>
 		IOnER/oqTAV3i6VpMw4laWLnyPQ=
-		</data>
-		<key>Headers/SLPHTTPManager.h</key>
-		<data>
-		dsfoDONNbWUHDbGgXhz09eJ5giE=
 		</data>
 		<key>Headers/SLPLight.h</key>
 		<data>
@@ -161,11 +157,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ilW73oOA8FegCooprwvH65ijP7I=
+			nPvszMDZVUdkzb/6GDIEZZG7Mhw=
 			</data>
 			<key>hash2</key>
 			<data>
-			TCGmT84EcCnmzfX85Ju81NfFhZhkxdcVkV0OnuytlfE=
+			Vka/JchiC5GlmiynJS+vb+yj/kd5AmcySzBykm1iKgg=
 			</data>
 		</dict>
 		<key>Headers/SLPDataTransferCommon.h</key>
@@ -210,17 +206,6 @@
 			<key>hash2</key>
 			<data>
 			vI1bcS5NZ6yMKDSk51NG//LuIRwwdJ0cYoFHoHIUXho=
-			</data>
-		</dict>
-		<key>Headers/SLPHTTPManager.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			dsfoDONNbWUHDbGgXhz09eJ5giE=
-			</data>
-			<key>hash2</key>
-			<data>
-			l7qMxUgY/ZMdPmUJlhnSNUhl05mp3KLYI8TR8cT1yPA=
 			</data>
 		</dict>
 		<key>Headers/SLPLight.h</key>

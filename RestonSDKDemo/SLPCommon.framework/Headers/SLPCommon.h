@@ -21,4 +21,4 @@
 #import "SLPClockDormancyBean.h"
 #import "SLPAlarmInfo.h"
 #import "Loop.h"
-#import "SLPHTTPManager.h"
+//#import "SLPHTTPManager.h"
