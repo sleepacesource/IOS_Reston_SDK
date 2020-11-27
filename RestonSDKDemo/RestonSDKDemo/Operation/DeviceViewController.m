@@ -247,6 +247,10 @@
             [Tool outputResultWithStr:NSLocalizedString(@"failure", nil) textView:self.textView];
         }
     }];
+    
+    [SLPBLESharedManager reston:self.selectPeripheral.peripheral getAutoCollectionTimeout:10 completion:^(SLPDataTransferStatus status, id data) {
+
+    }];
 }
 
 

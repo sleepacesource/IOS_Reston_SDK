@@ -16,6 +16,7 @@
 #import "RestonUpgradeInfo.h"
 #import "Reston_HistoryData.h"
 #import "RestonEnvironmentalData.h"
+#import "RestonAutoCollection.h"
 
 @interface SLPBLEManager (Reston)
 /*deviceName 设备名称 和设备ID区分一下
@@ -73,6 +74,11 @@
  */
 - (void)reston:(CBPeripheral *)peripheral stopCollectionWithTimeout:(CGFloat)timeout
       callback:(SLPTransforCallback)handle;
+
+/*获取自动采集时间
+  回调返回 RestonCollectionStatus
+ */
+- (void)reston:(CBPeripheral *)peripheral getAutoCollectionTimeout:(CGFloat)timeout completion:(SLPTransforCallback)handle;
 
 /*查询采集状态
   回调返回 RestonCollectionStatus
