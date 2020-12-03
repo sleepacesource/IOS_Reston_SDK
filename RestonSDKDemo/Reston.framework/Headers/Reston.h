@@ -11,7 +11,7 @@
 #import "SLPRestonDef.h"
 #import "SLPBLEManager+Reston.h"
 
-#define kRestonVersion  @"3.2.0";
+#define kRestonVersion  @"3.2.1";
 
 // In this header, you should import all the public headers of your framework using statements like #import <Reston/PublicHeader.h>
 
