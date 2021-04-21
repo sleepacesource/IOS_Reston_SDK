@@ -30,5 +30,7 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Please turn on Bluetooth in \&quot;Settings&gt;Bluetooth\&quot;. Otherwise, device can not be connected</string>
 </dict>
 </plist>
