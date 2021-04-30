@@ -13,4 +13,4 @@
 #import "SLPOriginalDataALG.h"
 #import "SLPBLEManager.h"
 #import "SLPBLEManager+Scan.h"
-#define kManagerVersion  @"3.0.1";
+#define kManagerVersion  @"3.0.2";

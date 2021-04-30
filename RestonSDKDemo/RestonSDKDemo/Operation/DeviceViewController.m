@@ -101,6 +101,12 @@
     self.textView.textColor=[FontColor C3];
     self.textView.font=[FontColor T4];
     
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(noti:) name:kNotificationNameBLEDeviceDisconnect object:nil];
+    
+}
+
+- (void)noti:(NSNotification *)info{
+    NSLog(@"device disconnected");
 }
 
 - (void)addLeftItem
