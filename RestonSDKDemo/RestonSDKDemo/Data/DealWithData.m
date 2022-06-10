@@ -38,6 +38,9 @@
     NSString *endTimeStr =[NSString stringWithFormat:@"%02d:%02d",endSleepTime/60>=24?endSleepTime/60-24:endSleepTime/60,endSleepTime%60];
      NSString *sleepTime=[NSString stringWithFormat:@"%@(%@)~%@(%@)",startTimeStr,NSLocalizedString(@"starting_point", nil),endTimeStr,NSLocalizedString(@"end_point", nil)];
     
+//    NSString *temString=[NSString stringWithFormat:@"%@ ℃",obj.tem];
+//    NSString *humString=[NSString stringWithFormat:@"%@ %%",obj.hum];
+    
     return  @[date,sleepTime,duration,averageHeartRate,averageBreathRate];
 }
 
@@ -74,6 +77,8 @@
     NSString *lightPre=[NSString stringWithFormat:@"%d%%",[obj.MdLightSleepPerc integerValue]];
     NSString *wakePre=[NSString stringWithFormat:@"%d%%",[obj.MdWakeSleepPerc integerValue]];
     NSString *breathPauseStr=[NSString stringWithFormat:@"%@",obj.breathPauseTimeString.length?obj.breathPauseTimeString:NSLocalizedString(@"nothing", nil)];
+//    NSString *temString=[NSString stringWithFormat:@"%@ ℃",obj.tem];
+//    NSString *humString=[NSString stringWithFormat:@"%@ %%",obj.hum];
     
     return  @[date,score,deArr,sleepTime,duration,asleepTime,averageHeartRate,averageBreathRate,breathPauseStr,deepPre,remPre,lightPre,wakePre,wakes,turnOver,bodyMovement,leaveBed];
 }

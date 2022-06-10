@@ -71,20 +71,20 @@
     NSString *time=[NSString stringWithFormat:@"%02d:%02d",hour,min];
     NSString *pStr=[NSString stringWithFormat:NSLocalizedString(@"writing_automatically_monitor_device", nil),time];
     [Tool outputResultWithStr:pStr textView:nil];
-    [SLPBLESharedManager reston:self.selectPeripheral.peripheral setAutoCollection:YES hour:hour minute:min repeat:127 timeout:10.0 callback:^(SLPDataTransferStatus status, id data) {
-        if (status==SLPDataTransferStatus_Succeed) {
-            NSLog(@"设置自动监测成功");
-            [Tool outputResultWithStr:NSLocalizedString(@"write_success", nil) textView:nil];
-            [self.navigationController popViewControllerAnimated:YES];
-        }
-        else
-        {
-            [Tool outputResultWithStr:NSLocalizedString(@"failure", nil) textView:nil];
-            UIAlertView *alertview=[[UIAlertView alloc]initWithTitle:nil message:NSLocalizedString(@"failure", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"confirm", nil) otherButtonTitles:nil];
-            [alertview show];
-            NSLog(@"设置自动监测失败");
-        }
-    }];
+//    [SLPBLESharedManager reston:self.selectPeripheral.peripheral setAutoCollection:YES hour:hour minute:min repeat:127 timeout:10.0 callback:^(SLPDataTransferStatus status, id data) {
+//        if (status==SLPDataTransferStatus_Succeed) {
+//            NSLog(@"设置自动监测成功");
+//            [Tool outputResultWithStr:NSLocalizedString(@"write_success", nil) textView:nil];
+//            [self.navigationController popViewControllerAnimated:YES];
+//        }
+//        else
+//        {
+//            [Tool outputResultWithStr:NSLocalizedString(@"failure", nil) textView:nil];
+//            UIAlertView *alertview=[[UIAlertView alloc]initWithTitle:nil message:NSLocalizedString(@"failure", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"confirm", nil) otherButtonTitles:nil];
+//            [alertview show];
+//            NSLog(@"设置自动监测失败");
+//        }
+//    }];
 }
 
 #pragma mark - PickerView delegate methods

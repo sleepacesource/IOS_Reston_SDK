@@ -7,7 +7,7 @@
 //
 
 #import "DataViewController.h"
-#import <Reston/Reston.h>
+#import <RestonA/RestonA.h>
 #import "Tool.h"
 #import "FixView.h"
 #import "SleepView.h"
@@ -201,7 +201,7 @@
     long startTime = 0  ;
     long endTime = [[NSDate date] timeIntervalSince1970];
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [SLPBLESharedManager reston:self.selectPeripheral.peripheral personType:SLPSleepPersonType_Male historyDownloadWithStartTime:startTime endTime:endTime eachDataCallback:^(SLPDataTransferStatus status, id data) {
+    [SLPBLESharedManager autoReston:self.selectPeripheral.peripheral personType:SLPSleepPersonType_Male historyDownloadWithStartTime:startTime endTime:endTime eachDataCallback:^(SLPDataTransferStatus status, id data) {
         SLPHistoryData *historyData=(SLPHistoryData *)data;
         [historyArr addObject:historyData];
         NSLog(@"download history data:>%@",historyData);
@@ -251,7 +251,9 @@
                      NSLocalizedString(@"wake_times", nil),
                      NSLocalizedString(@"turn_times", nil),
                      NSLocalizedString(@"body_times", nil),
-                     NSLocalizedString(@"out_times", nil)
+                     NSLocalizedString(@"out_times", nil),
+                     NSLocalizedString(@"temperature", nil),
+                     NSLocalizedString(@"humidity", nil)
                      ];
     }
     else
@@ -260,7 +262,9 @@
                      NSLocalizedString(@"sleeping_time", nil),
                      NSLocalizedString(@"sleep_duration", nil),
                      NSLocalizedString(@"heart_rate", nil),
-                     NSLocalizedString(@"respiration_rate", nil)
+                     NSLocalizedString(@"respiration_rate", nil),
+                     NSLocalizedString(@"temperature", nil),
+                     NSLocalizedString(@"humidity", nil)
                      ];
         
     }

@@ -77,6 +77,7 @@ typedef NS_ENUM(NSInteger,SLPDeviceTypes) {
     SLPDeviceType_EW201W = 0x001E,//唤醒灯 WiFi版
     SLPDeviceType_Binatone = 0x0021,//贝纳通
     SLPDeviceType_P3 = 0x22,//p300
+    SLPDeviceType_P200A = 0x2E,//p200A
     SLPDeviceType_TWP2 = 0x25,//TWP-2
     SLPDeviceType_M800 = 0x26, // M800
     SLPDeviceType_SN913E = 0x2C, // SN913E
@@ -86,7 +87,12 @@ typedef NS_ENUM(NSInteger,SLPDeviceTypes) {
     SLPDeviceType_EW202W = 0x35, // EW202W
     SLPDeviceType_BM8701 = 0x8099, // BM8701
     SLPDeviceType_FH601W = 0x8013, // FH601W
-    
+    SLPDeviceType_TWP3 = 0x5009,//TWP-3
+    SLPDeviceType_SONGXIA_TWP3 = 0x500D,//TWP-3松下定制
+    SLPDeviceType_SM100 = 0x500E,//FH601W - 医疗定制版
+    SLPDeviceType_SM200 = 0x500F,//BM8701 - 医疗定制版
+    SLPDeviceType_SM300 = 0x5101,//M8701W - 医疗定制版
+
 };
 
 //样本数据的人群类型 目前只有男性和女性

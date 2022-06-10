@@ -139,6 +139,9 @@
     self.hxgssc= [NSNumber numberWithInt:0];
     self.hxghsc= [NSNumber numberWithInt:0];  //呼吸过缓时长
     
+    self.tem = [NSNumber numberWithInt:0];
+    self.hum = [NSNumber numberWithInt:0];
+    
     self.stopMode = [NSNumber numberWithInt:1];
     self.timeStep = [NSNumber numberWithInt:60];
     self.recordCount = [NSNumber numberWithInt:0];

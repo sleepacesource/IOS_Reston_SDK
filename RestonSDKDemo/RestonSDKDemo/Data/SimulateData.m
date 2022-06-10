@@ -73,7 +73,8 @@
 //    obj.source=[NSNumber numberWithInteger:6];
     obj.timezone=[NSNumber numberWithInteger:28800];
     obj.arithmeticVer=@"";
-    
+    obj.tem = [NSNumber numberWithInteger:23];
+    obj.hum = [NSNumber numberWithInteger:55];
     return obj;
 }
 
@@ -111,7 +112,8 @@
     obj.asleepTime=[NSNumber numberWithInteger:0];
     obj.reportFlag=[NSNumber numberWithInteger:2];
     obj.arithmeticVer=@"";
-    
+    obj.tem = [NSNumber numberWithInteger:23];
+    obj.hum = [NSNumber numberWithInteger:55];
     return obj;
 }
 

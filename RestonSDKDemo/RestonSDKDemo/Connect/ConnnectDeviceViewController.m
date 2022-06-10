@@ -8,7 +8,7 @@
 
 #import "ConnnectDeviceViewController.h"
 #import "Tool.h"
-#import <Reston/Reston.h>
+#import <RestonA/RestonA.h>>
 #import "DeviceViewController.h"
 #import "ControlViewController.h"
 #import "DataViewController.h"
@@ -41,7 +41,8 @@
 - (NSArray *)numArray
 {
     if (!_numArray) {
-        self.numArray=@[@"9-0",@"22-3",@"22-4"];
+//        self.numArray=@[@"9-0",@"22-3",@"22-4"];
+        self.numArray=@[@"22-3"];
     }
     return _numArray;
 }
@@ -147,7 +148,7 @@
 }
 - (IBAction)selectDeviceNumber:(id)sender {
     
-    UIActionSheet *sheet=[[UIActionSheet alloc]initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"cancel", nil) destructiveButtonTitle:nil otherButtonTitles:self.numArray[0],self.numArray[1],self.numArray[2], nil];
+    UIActionSheet *sheet=[[UIActionSheet alloc]initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"cancel", nil) destructiveButtonTitle:nil otherButtonTitles:self.numArray[0], nil];
     [sheet showInView:self.view];
 }
 

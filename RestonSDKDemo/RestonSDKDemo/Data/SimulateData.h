@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "UserObj.h"
 //#import <Reston/Reston.h>
-#import <Reston/Reston.h>
-#import <Reston/Reston_HistoryData.h>
+#import <RestonA/RestonA.h>
+#import <RestonA/Reston_HistoryData.h>
 
 @interface SimulateData : NSObject
 

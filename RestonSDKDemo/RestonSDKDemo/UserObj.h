@@ -97,6 +97,10 @@ typedef NS_ENUM(NSInteger,SLPSleepBodyMovementGrades) {
 
 @property(nonatomic,strong)NSNumber  *asleepTime;//入睡所花时间
 
+@property(nonatomic,strong)NSNumber  *tem;     //温度
+@property(nonatomic,strong)NSNumber  *hum;////湿度
+///
+
 @property(nonatomic,strong)NSString *weekday;
 @property(nonatomic,strong)NSString *week;
 @property(nonatomic,strong)NSString *month;

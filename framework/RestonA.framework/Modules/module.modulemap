@@ -1,0 +1,6 @@
+framework module RestonA {
+  umbrella header "RestonA.h"
+
+  export *
+  module * { export * }
+}

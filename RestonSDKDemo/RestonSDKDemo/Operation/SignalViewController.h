@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Reston/Reston.h>
+#import <RestonA/RestonA.h>
 
 @interface SignalViewController : UIViewController
 

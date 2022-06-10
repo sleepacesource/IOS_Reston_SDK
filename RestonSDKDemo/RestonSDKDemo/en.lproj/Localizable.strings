@@ -41,7 +41,7 @@
 "wake"="Awake";
 "sleep"="Fall Asleep";
 "out_bed"="Left Bed";
-"sleep_analysis"="Sleep Analysis";
+"sleep_analysis"="Sync report";
 "imitate_data"="Simulation Data";
 "start_collection"="Start Collecting";
 "set_auto_monitor"="Set Up Automatic Monitoring";
@@ -208,3 +208,5 @@
 "get_working_status"="Get device working status: %@";
 "remark_1"="To ensure the accuracy of sleep analysis, set the length to 3 to 16 hours. And ensure that the connected device is saved.";
 "getting_real_time_data"="Getting real-time data";
+"temperature" = "Temperature";
+"humidity" = "Humidity";

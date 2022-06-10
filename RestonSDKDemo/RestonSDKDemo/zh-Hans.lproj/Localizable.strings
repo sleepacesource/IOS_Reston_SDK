@@ -41,7 +41,7 @@
 "wake"="清醒";
 "sleep"="入睡";
 "out_bed"="离床";
-"sleep_analysis"="睡眠分析";
+"sleep_analysis"="同步报告";
 "imitate_data"="模拟数据";
 "start_collection"="开始采集";
 "set_auto_monitor"="设置自动监测";
@@ -208,3 +208,5 @@
 "get_working_status"="获取设备工作状态：%@";
 "remark_1"="为确保睡眠分析准确度，请将时间长度设置在3~16个小时内。且确保连接设备成功后保存。";
 "getting_real_time_data"="正在获取实时数据...";
+"temperature" = "温度";
+"humidity" = "湿度";

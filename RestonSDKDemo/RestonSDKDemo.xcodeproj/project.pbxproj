@@ -27,6 +27,9 @@
 		260493AA1F6B7F4F0035E2E8 /* DeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2604939F1F6B7F4F0035E2E8 /* DeviceViewController.xib */; };
 		260493AB1F6B7F4F0035E2E8 /* SignalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 260493A11F6B7F4F0035E2E8 /* SignalViewController.m */; };
 		260493AC1F6B7F4F0035E2E8 /* SignalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 260493A21F6B7F4F0035E2E8 /* SignalViewController.xib */; };
+		2621C79F2853293800774697 /* RestonA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2621C79E2853293800774697 /* RestonA.framework */; };
+		2621C7A128533E4E00774697 /* Z400T-2_20200801_ReleaseFull_V1.02(2.0.3).des in Resources */ = {isa = PBXBuildFile; fileRef = 2621C7A028533E4E00774697 /* Z400T-2_20200801_ReleaseFull_V1.02(2.0.3).des */; };
+		2621C7A228533E4E00774697 /* Z400T-2_20200801_ReleaseFull_V1.02(2.0.3).des in Resources */ = {isa = PBXBuildFile; fileRef = 2621C7A028533E4E00774697 /* Z400T-2_20200801_ReleaseFull_V1.02(2.0.3).des */; };
 		26241C5B1F54049300F672A8 /* SLPTitleValueArrowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26241C591F54049300F672A8 /* SLPTitleValueArrowTableViewCell.m */; };
 		26241C5C1F54049300F672A8 /* SLPTitleValueArrowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26241C5A1F54049300F672A8 /* SLPTitleValueArrowTableViewCell.xib */; };
 		26241C5F1F542A9700F672A8 /* tab_btn_scenes_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26241C5D1F542A9700F672A8 /* tab_btn_scenes_home@2x.png */; };
@@ -80,13 +83,11 @@
 		269CDAE51F5E464E00D20D8A /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 269CDAE11F5E464D00D20D8A /* Default-667h@2x.png */; };
 		269CDAE61F5E464E00D20D8A /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 269CDAE21F5E464E00D20D8A /* Default-736h@3x.png */; };
 		269CDAE71F5E464E00D20D8A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 269CDAE31F5E464E00D20D8A /* Default@2x.png */; };
-		269CDAEB1F5E74E900D20D8A /* Reston.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269CDAEA1F5E74E900D20D8A /* Reston.framework */; };
 		269CDAEE1F5E93CD00D20D8A /* SLPUnderlineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CDAED1F5E93CD00D20D8A /* SLPUnderlineButton.m */; };
 		26B41BA51F7DDC3B0003994A /* sdk_index_icon_reston@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26B41BA31F7DDC3B0003994A /* sdk_index_icon_reston@2x.png */; };
 		26B41BA61F7DDC3B0003994A /* sdk_index_icon_reston@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26B41BA41F7DDC3B0003994A /* sdk_index_icon_reston@3x.png */; };
 		26B41BB01F7DE42F0003994A /* control@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26B41BAF1F7DE42F0003994A /* control@2x.png */; };
 		26B41BB21F7DE4450003994A /* control@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26B41BB11F7DE4450003994A /* control@3x.png */; };
-		26C49A361F6904F400673436 /* 22-3_1.15.des in Resources */ = {isa = PBXBuildFile; fileRef = 26C49A2C1F6904F400673436 /* 22-3_1.15.des */; };
 		26C49A371F6904F400673436 /* 22-4_1.1.5.des in Resources */ = {isa = PBXBuildFile; fileRef = 26C49A2D1F6904F400673436 /* 22-4_1.1.5.des */; };
 		26C49A3F1F6904F400673436 /* 9-0_1.14.des in Resources */ = {isa = PBXBuildFile; fileRef = 26C49A351F6904F400673436 /* 9-0_1.14.des */; };
 		26C67B3B1F34616400A835DB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 26C67B371F34616400A835DB /* LICENSE */; };
@@ -147,6 +148,8 @@
 		260493A01F6B7F4F0035E2E8 /* SignalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalViewController.h; sourceTree = "<group>"; };
 		260493A11F6B7F4F0035E2E8 /* SignalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalViewController.m; sourceTree = "<group>"; };
 		260493A21F6B7F4F0035E2E8 /* SignalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignalViewController.xib; sourceTree = "<group>"; };
+		2621C79E2853293800774697 /* RestonA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RestonA.framework; sourceTree = "<group>"; };
+		2621C7A028533E4E00774697 /* Z400T-2_20200801_ReleaseFull_V1.02(2.0.3).des */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Z400T-2_20200801_ReleaseFull_V1.02(2.0.3).des"; sourceTree = "<group>"; };
 		26241C581F54049300F672A8 /* SLPTitleValueArrowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SLPTitleValueArrowTableViewCell.h; path = ../Operation/SLPTitleValueArrowTableViewCell.h; sourceTree = "<group>"; };
 		26241C591F54049300F672A8 /* SLPTitleValueArrowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SLPTitleValueArrowTableViewCell.m; path = ../Operation/SLPTitleValueArrowTableViewCell.m; sourceTree = "<group>"; };
 		26241C5A1F54049300F672A8 /* SLPTitleValueArrowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SLPTitleValueArrowTableViewCell.xib; path = ../Operation/SLPTitleValueArrowTableViewCell.xib; sourceTree = "<group>"; };
@@ -235,14 +238,12 @@
 		269CDAE11F5E464D00D20D8A /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		269CDAE21F5E464E00D20D8A /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		269CDAE31F5E464E00D20D8A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		269CDAEA1F5E74E900D20D8A /* Reston.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reston.framework; sourceTree = "<group>"; };
 		269CDAEC1F5E93CD00D20D8A /* SLPUnderlineButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SLPUnderlineButton.h; path = ../SLPUnderlineButton.h; sourceTree = "<group>"; };
 		269CDAED1F5E93CD00D20D8A /* SLPUnderlineButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SLPUnderlineButton.m; path = ../SLPUnderlineButton.m; sourceTree = "<group>"; };
 		26B41BA31F7DDC3B0003994A /* sdk_index_icon_reston@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sdk_index_icon_reston@2x.png"; sourceTree = "<group>"; };
 		26B41BA41F7DDC3B0003994A /* sdk_index_icon_reston@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sdk_index_icon_reston@3x.png"; sourceTree = "<group>"; };
 		26B41BAF1F7DE42F0003994A /* control@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "control@2x.png"; sourceTree = "<group>"; };
 		26B41BB11F7DE4450003994A /* control@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "control@3x.png"; sourceTree = "<group>"; };
-		26C49A2C1F6904F400673436 /* 22-3_1.15.des */ = {isa = PBXFileReference; lastKnownFileType = file; path = "22-3_1.15.des"; sourceTree = "<group>"; };
 		26C49A2D1F6904F400673436 /* 22-4_1.1.5.des */ = {isa = PBXFileReference; lastKnownFileType = file; path = "22-4_1.1.5.des"; sourceTree = "<group>"; };
 		26C49A351F6904F400673436 /* 9-0_1.14.des */ = {isa = PBXFileReference; lastKnownFileType = file; path = "9-0_1.14.des"; sourceTree = "<group>"; };
 		26C67B371F34616400A835DB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -259,8 +260,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				269CDAEB1F5E74E900D20D8A /* Reston.framework in Frameworks */,
 				2675237F1F32B52F00BB304C /* libc++.tbd in Frameworks */,
+				2621C79F2853293800774697 /* RestonA.framework in Frameworks */,
 				2656285C1F43DFE6000CC012 /* BluetoothManager.framework in Frameworks */,
 				26DE0CD2216EF6F400C00DA3 /* SLPCommon.framework in Frameworks */,
 			);
@@ -338,9 +339,9 @@
 			isa = PBXGroup;
 			children = (
 				26C67B361F34616400A835DB /* MBProgressHUD */,
+				2621C79E2853293800774697 /* RestonA.framework */,
 				26DE0CD1216EF6F400C00DA3 /* SLPCommon.framework */,
 				2656285A1F43DFE6000CC012 /* BluetoothManager.framework */,
-				269CDAEA1F5E74E900D20D8A /* Reston.framework */,
 				262E22681F26D6A300445451 /* RestonSDKDemo */,
 				262E22821F26D6A300445451 /* RestonSDKDemoTests */,
 				262E228D1F26D6A300445451 /* RestonSDKDemoUITests */,
@@ -536,8 +537,8 @@
 		26C49A2B1F6904F400673436 /* package */ = {
 			isa = PBXGroup;
 			children = (
+				2621C7A028533E4E00774697 /* Z400T-2_20200801_ReleaseFull_V1.02(2.0.3).des */,
 				26C49A351F6904F400673436 /* 9-0_1.14.des */,
-				26C49A2C1F6904F400673436 /* 22-3_1.15.des */,
 				26C49A2D1F6904F400673436 /* 22-4_1.1.5.des */,
 			);
 			path = package;
@@ -666,7 +667,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				26241C5F1F542A9700F672A8 /* tab_btn_scenes_home@2x.png in Resources */,
-				26C49A361F6904F400673436 /* 22-3_1.15.des in Resources */,
 				265628B71F44429B000CC012 /* data@3x.png in Resources */,
 				269CDAE41F5E464E00D20D8A /* Default-568h@2x.png in Resources */,
 				265628C91F4442D3000CC012 /* leavebed_sm@3x.png in Resources */,
@@ -699,6 +699,7 @@
 				265628CA1F4442D3000CC012 /* moon@2x.png in Resources */,
 				263EA2BB1F5953E30007BCDC /* Images.xcassets in Resources */,
 				269CDAE71F5E464E00D20D8A /* Default@2x.png in Resources */,
+				2621C7A128533E4E00774697 /* Z400T-2_20200801_ReleaseFull_V1.02(2.0.3).des in Resources */,
 				260493AA1F6B7F4F0035E2E8 /* DeviceViewController.xib in Resources */,
 				2604937F1F6B7E9B0035E2E8 /* ConnnectDeviceViewController.xib in Resources */,
 				26241C601F542A9700F672A8 /* tab_btn_scenes_home@3x.png in Resources */,
@@ -714,6 +715,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2621C7A228533E4E00774697 /* Z400T-2_20200801_ReleaseFull_V1.02(2.0.3).des in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,7 +939,7 @@
 					"-force_load",
 					"$(SRCROOT)/BluetoothManager.framework/BluetoothManager",
 					"-force_load",
-					"$(SRCROOT)/Reston.framework/Reston",
+					"$(SRCROOT)/RestonA.framework/RestonA",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.medicatech.RestonSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -962,7 +964,7 @@
 				MARKETING_VERSION = v3.0.0.1;
 				OTHER_LDFLAGS = (
 					"-force_load",
-					"$(SRCROOT)/Reston.framework/Reston",
+					"$(SRCROOT)/RestonA.framework/RestonA",
 					"-force_load",
 					"$(SRCROOT)/BluetoothManager.framework/BluetoothManager",
 				);

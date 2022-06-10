@@ -8,7 +8,7 @@
 
 #import "ControlViewController.h"
 #import "AutoMonitorViewController.h"
-#import <Reston/Reston.h>
+#import <RestonA/RestonA.h>
 #import "Tool.h"
 #import "SignalViewController.h"
 
@@ -175,18 +175,18 @@
 
 
 - (IBAction)setAutoMonitor:(id)sender {
-    if (![Tool bleIsOpenShowToTextview:self.textView]) {
-        return ;
-    }
-    if (![Tool deviceIsConnected:self.selectPeripheral.peripheral ShowToTextview:self.textView]) {
-        return ;
-    }
-    
-    [Tool outputResultWithStr:NSLocalizedString(@"set_auto_monitor", nil) textView:self.textView];
-    AutoMonitorViewController *autoMonitorVC=[[AutoMonitorViewController alloc]initWithNibName:@"AutoMonitorViewController" bundle:nil];
-    autoMonitorVC.selectPeripheral=self.selectPeripheral;
-    self.navigationController.tabBarController.tabBar.hidden=YES;
-    [self.navigationController pushViewController:autoMonitorVC animated:YES];
+//    if (![Tool bleIsOpenShowToTextview:self.textView]) {
+//        return ;
+//    }
+//    if (![Tool deviceIsConnected:self.selectPeripheral.peripheral ShowToTextview:self.textView]) {
+//        return ;
+//    }
+//
+//    [Tool outputResultWithStr:NSLocalizedString(@"set_auto_monitor", nil) textView:self.textView];
+//    AutoMonitorViewController *autoMonitorVC=[[AutoMonitorViewController alloc]initWithNibName:@"AutoMonitorViewController" bundle:nil];
+//    autoMonitorVC.selectPeripheral=self.selectPeripheral;
+//    self.navigationController.tabBarController.tabBar.hidden=YES;
+//    [self.navigationController pushViewController:autoMonitorVC animated:YES];
 }
 
 - (IBAction)startCollection:(id)sender {
@@ -198,18 +198,6 @@
     }
     
     [Tool outputResultWithStr:NSLocalizedString(@"informing_device_collecting", nil) textView:self.textView];
-    [SLPBLESharedManager reston:self.selectPeripheral.peripheral startCollectionWithTimeout:10.0 callback:^(SLPDataTransferStatus status, id data) {
-        if (status==SLPDataTransferStatus_Succeed) {
-            [Tool outputResultWithStr:NSLocalizedString(@"began_collect_success", nil) textView:self.textView];
-            self.startCollectBT.enabled=NO;
-            self.stopCollectBT.enabled=YES;
-        }
-        else
-        {
-            [Tool outputResultWithStr:NSLocalizedString(@"failure", nil) textView:self.textView];
-        }
-        [self isShowRealDataBT:status==SLPDataTransferStatus_Succeed?YES:NO];
-    }];
 }
 
 
@@ -270,9 +258,11 @@
     [[NSNotificationCenter defaultCenter]addObserverForName:kNotificationNameBLERestonRealtimeData object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
         
         RestonRealTimeData *realData= [note.userInfo objectForKey:kNotificationPostData];
-        NSLog(@"sleep status->%d,heartBeat-->%d,breath-->%d,awakeflag-->%d,sleepFlag-->%d",realData.status,realData.heartRate,realData.breathRate,realData.awakeFlag,realData.asleepFlag);
+        NSLog(@"sleep status->%d,heartBeat-->%d,breath-->%d,temperture->%d,humidity->%d",realData.status,realData.heartRate,realData.breathRate,realData.temperture,realData.humidity);
         NSString *b_value=[NSString stringWithFormat:@"%d %@",realData.heartRate,NSLocalizedString(@"unit_respiration", nil)];
         NSString *h_value=[NSString stringWithFormat:@"%d %@",realData.breathRate,NSLocalizedString(@"unit_heart", nil)];
+        NSString *temperture_value=[NSString stringWithFormat:@"%d",realData.temperture];
+        NSString *humidity_value=[NSString stringWithFormat:@"%d",realData.humidity];
         NSString *statusString;
         switch (realData.status) {
             case 0:
@@ -307,6 +297,8 @@
         [Tool outputResultWithStr:[NSString stringWithFormat:@"%@:%@",NSLocalizedString(@"sleep_state", nil),statusString] textView:self.textView];
         [Tool outputResultWithStr:[NSString stringWithFormat:@"%@:%@",NSLocalizedString(@"heartrate", nil),h_value] textView:self.textView];
         [Tool outputResultWithStr:[NSString stringWithFormat:@"%@:%@",NSLocalizedString(@"breathrate", nil),b_value] textView:self.textView];
+        [Tool outputResultWithStr:[NSString stringWithFormat:@"%@:%@",NSLocalizedString(@"temperature", nil),temperture_value] textView:self.textView];
+        [Tool outputResultWithStr:[NSString stringWithFormat:@"%@:%@",NSLocalizedString(@"humidity", nil),humidity_value] textView:self.textView];
         self.startCollectBT.enabled=NO;
         self.stopCollectBT.enabled=YES;
         [self isShowRealDataBT:YES];
@@ -327,7 +319,6 @@
 - (void)restonCollectionStarted:(NSNotification *)notification{
     NSLog(@"----start---");
 }
-
 
 - (IBAction)stopRealtimeData:(id)sender {
     if (![Tool bleIsOpenShowToTextview:self.textView]) {
@@ -362,10 +353,10 @@
         return ;
     }
     
-    [Tool outputResultWithStr:NSLocalizedString(@"getting_signal_strength", nil) textView:self.textView];
-    SignalViewController *signalVC=[[SignalViewController alloc]init];
-    signalVC.selectPeripheral=self.selectPeripheral;
-    [self.navigationController pushViewController:signalVC animated:YES];
+//    [Tool outputResultWithStr:NSLocalizedString(@"getting_signal_strength", nil) textView:self.textView];
+//    SignalViewController *signalVC=[[SignalViewController alloc]init];
+//    signalVC.selectPeripheral=self.selectPeripheral;
+//    [self.navigationController pushViewController:signalVC animated:YES];
 }
 
 - (void)disconnectedDevice
