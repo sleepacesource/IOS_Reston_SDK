@@ -311,7 +311,23 @@
         self.stopCollectBT.enabled=YES;
         [self isShowRealDataBT:YES];
     }];
+    //设备主动报送开始采集
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(restonCollectionStarted:)
+                               name:kNotificationNameBLERestonStartCollection object:nil];
+    //设备主动报送停止采集
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(restonCollectionStoped:)
+                               name:kNotificationNameBLERestonStopCollection object:nil];
 }
+
+- (void)restonCollectionStoped:(NSNotification *)notification{
+   
+    NSLog(@"----stop---");
+}
+
+- (void)restonCollectionStarted:(NSNotification *)notification{
+    NSLog(@"----start---");
+}
+
 
 - (IBAction)stopRealtimeData:(id)sender {
     if (![Tool bleIsOpenShowToTextview:self.textView]) {
