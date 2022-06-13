@@ -30,5 +30,7 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>请在iPhone“设置&gt;蓝牙”开启蓝牙。若不允许，你将无法连接设备</string>
 </dict>
 </plist>
