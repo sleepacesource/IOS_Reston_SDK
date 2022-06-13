@@ -73,8 +73,8 @@
 //    obj.source=[NSNumber numberWithInteger:6];
     obj.timezone=[NSNumber numberWithInteger:28800];
     obj.arithmeticVer=@"";
-    obj.tem = [NSNumber numberWithInteger:23];
-    obj.hum = [NSNumber numberWithInteger:55];
+    obj.tem = @"23~25";
+    obj.hum = @"55~58";
     return obj;
 }
 
@@ -112,14 +112,14 @@
     obj.asleepTime=[NSNumber numberWithInteger:0];
     obj.reportFlag=[NSNumber numberWithInteger:2];
     obj.arithmeticVer=@"";
-    obj.tem = [NSNumber numberWithInteger:23];
-    obj.hum = [NSNumber numberWithInteger:55];
+    obj.tem = @"23~25";
+    obj.hum = @"55~58";
     return obj;
 }
 
 + (UserObj *)dealwithData:(SLPHistoryData *)historyData
 {
-    Z1_HistoryDataDetail *detail =(Z1_HistoryDataDetail *)historyData.detail;
+    Z4T_HistoryDataDetail *detail =(Z4T_HistoryDataDetail *)historyData.detail;
     Z1_HistoryDataAnalysis *analysis=(Z1_HistoryDataAnalysis *)historyData.analysis;
     
     UserObj *obj=[[UserObj alloc]init];
@@ -183,7 +183,31 @@
     obj.deductionName=[self backDeductionArrayyFromAnalysis:analysis][0];
     obj.deductionValue=[self backDeductionArrayyFromAnalysis:analysis][1];
     obj.breathPauseTimeString=[self backBreathPause:analysis.breathRateStatusAry user:obj];
+
+    int t1 = [[detail.temperatureAry firstObject] intValue];
+    int t2 = [[detail.temperatureAry firstObject] intValue];
+    for (int i = 0; i< detail.temperatureAry.count; i++) {
+        if ([detail.temperatureAry[i] intValue] < t1) {
+            t1 = [detail.temperatureAry[i] intValue];
+        }
+        if ([detail.temperatureAry[i] intValue] > t2) {
+            t2 = [detail.temperatureAry[i] intValue];
+        }
+    }
     
+    int h1 = [[detail.humidityAry firstObject] intValue];
+    int h2 = [[detail.humidityAry firstObject] intValue];
+    for (int i = 0; i< detail.humidityAry.count; i++) {
+        if ([detail.humidityAry[i] intValue] < h1) {
+            h1 = [detail.temperatureAry[i] intValue];
+        }
+        if ([detail.humidityAry[i] intValue]> h2) {
+            h2 = [detail.humidityAry[i] intValue];
+        }
+    }
+    obj.tem = [NSString stringWithFormat:@"%d~%d",t1,t2];
+    obj.hum = [NSString stringWithFormat:@"%d~%d",h1,h2];
+
     return obj;
 }
 
