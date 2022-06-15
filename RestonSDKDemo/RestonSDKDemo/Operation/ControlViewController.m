@@ -329,11 +329,11 @@
     }
     [Tool outputResultWithStr:NSLocalizedString(@"stopping_data", nil) textView:self.textView];
     
-//    [SLPBLESharedManager reston:self.selectPeripheral.peripheral stopCollectionWithTimeout:10.0 callback:^(SLPDataTransferStatus status, id data) {
-//        
-//    }];
-//    
-//    return;
+    [SLPBLESharedManager reston:self.selectPeripheral.peripheral stopCollectionWithTimeout:10.0 callback:^(SLPDataTransferStatus status, id data) {
+
+    }];
+
+    return;
     
     [SLPBLESharedManager reston:self.selectPeripheral.peripheral stopRealTimeDataWithTimeout:10.0 callback:^(SLPDataTransferStatus status, id data) {
         if (status==SLPDataTransferStatus_Succeed) {

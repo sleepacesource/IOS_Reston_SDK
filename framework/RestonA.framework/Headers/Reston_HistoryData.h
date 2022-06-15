@@ -87,5 +87,6 @@ typedef NS_ENUM(NSInteger,Reston_ScoreDeductibleTypes) {
 @property (nonatomic,assign) NSInteger heartBeatRateSlowAllTime ; //心率过缓时长
 @property (nonatomic,assign) NSInteger breathRateFastAllTime ; //呼吸率过速时长
 @property (nonatomic,assign) NSInteger breathRateSlowAllTime ; //呼吸率过缓时长
+@property (nonatomic,assign) NSInteger exceptionCode;//错误码
 
 @end
