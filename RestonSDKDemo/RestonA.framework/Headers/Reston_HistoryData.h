@@ -76,9 +76,9 @@ typedef NS_ENUM(NSInteger,Reston_ScoreDeductibleTypes) {
 @property (nonatomic,assign) NSInteger bodyMovementTimes; //体动次数
 @property (nonatomic,assign) NSInteger heartBeatPauseTimes;  //心跳暂停次数
 @property (nonatomic,assign) NSInteger breathPauseTimes;  //呼吸暂停次数
-@property (nonatomic,assign) NSInteger breathPauseAllTime;  //呼吸暂停时长
-@property (nonatomic,assign) NSInteger heartBeatPauseAllTime;  //心跳暂停时长
-@property (nonatomic,assign) NSInteger leaveBedAllTime;  //离床时长
+//@property (nonatomic,assign) NSInteger breathPauseAllTime;  //呼吸暂停时长
+//@property (nonatomic,assign) NSInteger heartBeatPauseAllTime;  //心跳暂停时长
+//@property (nonatomic,assign) NSInteger leaveBedAllTime;  //离床时长
 @property (nonatomic,assign) NSInteger maxHeartBeatRate;  //最高心率
 @property (nonatomic,assign) NSInteger maxBreathRate;  //最高呼吸率
 @property (nonatomic,assign) NSInteger minHeartBeatRate;  //最低心率
