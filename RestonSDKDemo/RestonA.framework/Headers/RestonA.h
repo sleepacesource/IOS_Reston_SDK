@@ -11,6 +11,6 @@
 #import "SLPRestonDef.h"
 #import "SLPBLEManager+RestonA.h"
 
-#define kRestonAVersion  @"3.2.1";
+#define kRestonAVersion  @"3.2.2";
 
 
