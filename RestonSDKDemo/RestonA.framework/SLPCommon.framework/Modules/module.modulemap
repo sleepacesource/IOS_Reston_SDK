@@ -1,6 +1,0 @@
-framework module SLPCommon {
-  umbrella header "SLPCommon.h"
-
-  export *
-  module * { export * }
-}
