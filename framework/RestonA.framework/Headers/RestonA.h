@@ -11,6 +11,7 @@
 #import "SLPRestonDef.h"
 #import "SLPBLEManager+RestonA.h"
 
-#define kRestonAVersion  @"3.2.2";
+//Z400T-2从3.2.4新版本起
+#define kRestonAVersion  @"3.2.4";
 
 

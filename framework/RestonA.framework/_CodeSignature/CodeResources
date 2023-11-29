@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RestonA.h</key>
 		<data>
-		7X1tr5oMDUGvmVryCxdHXTe+clE=
+		6iSurtzOIBqH/BIVkhxnFk8CbhY=
 		</data>
 		<key>Headers/RestonAutoCollection.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/Reston_HistoryData.h</key>
 		<data>
-		8+qzJ5HEwuNlye4C6h7dbFEBMHE=
+		OxpJnYlTNps6kb9CEXWV86nScjY=
 		</data>
 		<key>Headers/SLPBLEManager+RestonA.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GKiHkuQCW7l3/z2qqkJcQvzH6vw=
+		9w8zBd43IiCizYpR443RlMsGwlA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,11 +71,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7X1tr5oMDUGvmVryCxdHXTe+clE=
+			6iSurtzOIBqH/BIVkhxnFk8CbhY=
 			</data>
 			<key>hash2</key>
 			<data>
-			pUPGlusbZ5+2TLvR0UM21mGwkGA5houmga85lN2ohN8=
+			COHULruffHAPzCgev0XaXKuDwhbscU0yXNAucxWH1UU=
 			</data>
 		</dict>
 		<key>Headers/RestonAutoCollection.h</key>
@@ -181,11 +181,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8+qzJ5HEwuNlye4C6h7dbFEBMHE=
+			OxpJnYlTNps6kb9CEXWV86nScjY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jo/cQkkRDwTGjgUjnpB20JHPz9dbnAOX0HUqQJwpHu4=
+			CQTxcqYhYgY71XbUrzaZ9erzNSVO6eMYLRcE/G15dTg=
 			</data>
 		</dict>
 		<key>Headers/SLPBLEManager+RestonA.h</key>

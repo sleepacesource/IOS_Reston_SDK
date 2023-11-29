@@ -42,7 +42,7 @@
     NSString *temString=[NSString stringWithFormat:@"%@ ℃",obj.tem];
     NSString *humString=[NSString stringWithFormat:@"%@ %%",obj.hum];
     
-    return  @[date,sleepTime,duration,averageHeartRate,averageBreathRate,temString,humString];
+    return  @[date,sleepTime,duration,averageHeartRate,averageBreathRate,temString,humString,@"2.0.17"];
 }
 
 +(NSArray *)backLongDataArray:(UserObj *)obj

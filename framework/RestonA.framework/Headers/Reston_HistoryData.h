@@ -76,7 +76,7 @@ typedef NS_ENUM(NSInteger,Reston_ScoreDeductibleTypes) {
 @property (nonatomic,assign) NSInteger bodyMovementTimes; //体动次数
 @property (nonatomic,assign) NSInteger heartBeatPauseTimes;  //心跳暂停次数
 @property (nonatomic,assign) NSInteger breathPauseTimes;  //呼吸暂停次数
-//@property (nonatomic,assign) NSInteger breathPauseAllTime;  //呼吸暂停时长
+@property (nonatomic,assign) NSInteger breathPauseAllTime;  //呼吸暂停时长
 //@property (nonatomic,assign) NSInteger heartBeatPauseAllTime;  //心跳暂停时长
 //@property (nonatomic,assign) NSInteger leaveBedAllTime;  //离床时长
 @property (nonatomic,assign) NSInteger maxHeartBeatRate;  //最高心率
@@ -89,4 +89,13 @@ typedef NS_ENUM(NSInteger,Reston_ScoreDeductibleTypes) {
 @property (nonatomic,assign) NSInteger breathRateSlowAllTime ; //呼吸率过缓时长
 @property (nonatomic,assign) NSInteger exceptionCode;//错误码
 
+//AHI
+@property (nonatomic,assign) NSInteger ahIndex;//AHI值
+@property (nonatomic,strong) NSArray *ahi_Array;//ahi数组
+@property (nonatomic,assign) NSInteger csaDur;//csaDur
+@property (nonatomic,assign) NSInteger csaCnt;//csaCnt
+@property (nonatomic,assign) NSInteger csaMaxDur;//csaMaxDur
+@property (nonatomic,assign) NSInteger osaDur;//osaDur
+@property (nonatomic,assign) NSInteger osaCnt;//osaCnt
+@property (nonatomic,assign) NSInteger osaMaxDur;//osaMaxDur
 @end
