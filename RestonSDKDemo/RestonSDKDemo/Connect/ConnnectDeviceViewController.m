@@ -42,7 +42,7 @@
 {
     if (!_numArray) {
 //        self.numArray=@[@"9-0",@"22-3",@"22-4"];
-        self.numArray=@[@"22-3"];
+        self.numArray=@[@"47-3"];
     }
     return _numArray;
 }
@@ -163,22 +163,22 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
-    [UIView animateWithDuration:0.5 animations:^{
-        CGRect rect=self.view.frame;
-        CGFloat y_value=rect.origin.y-120;
-        rect.origin.y=y_value;
-        self.view.frame=rect;
-    }];
+//    [UIView animateWithDuration:0.5 animations:^{
+//        CGRect rect=self.view.frame;
+//        CGFloat y_value=rect.origin.y-120;
+//        rect.origin.y=y_value;
+//        self.view.frame=rect;
+//    }];
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
-    [UIView animateWithDuration:0.3 animations:^{
-        CGRect rect=self.view.frame;
-        CGFloat y_value=rect.origin.y+120;
-        rect.origin.y=y_value;
-        self.view.frame=rect;
-    }];
+//    [UIView animateWithDuration:0.3 animations:^{
+//        CGRect rect=self.view.frame;
+//        CGFloat y_value=rect.origin.y+120;
+//        rect.origin.y=y_value;
+//        self.view.frame=rect;
+//    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -188,7 +188,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self.myTextfield resignFirstResponder];
+//    [self.myTextfield resignFirstResponder];
 }
 
 @end

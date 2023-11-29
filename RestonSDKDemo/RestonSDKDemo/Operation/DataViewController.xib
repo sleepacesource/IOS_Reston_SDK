@@ -12,12 +12,10 @@
                 <outlet property="analysisBT" destination="5aS-8m-XkR" id="a2d-Jb-QMM"/>
                 <outlet property="buttonView" destination="Onq-aX-hbc" id="L77-lc-9uo"/>
                 <outlet property="cView" destination="QbV-V3-m3G" id="x1T-mC-dlF"/>
-                <outlet property="label1" destination="Ko8-OS-WMS" id="Q4R-r8-fMX"/>
                 <outlet property="myDataTableview" destination="ATP-b6-247" id="dlE-nF-mFV"/>
                 <outlet property="myscorollview" destination="hzY-Vy-8GS" id="QHi-4h-sCA"/>
                 <outlet property="simulateDataLongBT" destination="kOJ-Cj-ZBY" id="q47-pU-j8j"/>
                 <outlet property="simulateDataShortBT" destination="wJH-0m-Etp" id="DY7-zL-lp1"/>
-                <outlet property="textView" destination="EqE-BB-4Hn" id="ahp-I5-VbO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,37 +28,10 @@
                     <rect key="frame" x="0.0" y="16" width="320" height="552"/>
                 </scrollView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QbV-V3-m3G">
-                    <rect key="frame" x="0.0" y="16" width="320" height="2250"/>
+                    <rect key="frame" x="0.0" y="16" width="320" height="2000"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="执行过程:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ko8-OS-WMS">
-                            <rect key="frame" x="15" y="0.0" width="74" height="21"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="21" id="HVY-Rk-BxU"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.50980392159999999" green="0.57254901960000004" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ssQ-lb-wbh">
-                            <rect key="frame" x="15" y="26" width="290" height="200"/>
-                            <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EqE-BB-4Hn">
-                                    <rect key="frame" x="0.0" y="0.0" width="290" height="200"/>
-                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                </textView>
-                            </subviews>
-                            <constraints>
-                                <constraint firstItem="EqE-BB-4Hn" firstAttribute="top" secondItem="ssQ-lb-wbh" secondAttribute="top" id="VGr-i3-j9c"/>
-                                <constraint firstAttribute="bottom" secondItem="EqE-BB-4Hn" secondAttribute="bottom" id="lgJ-I5-TSm"/>
-                                <constraint firstAttribute="trailing" secondItem="EqE-BB-4Hn" secondAttribute="trailing" id="ly5-Qc-KHw"/>
-                                <constraint firstAttribute="height" constant="200" id="xQO-ZL-XuZ"/>
-                                <constraint firstItem="EqE-BB-4Hn" firstAttribute="leading" secondItem="ssQ-lb-wbh" secondAttribute="leading" id="zsE-0Y-MXt"/>
-                            </constraints>
-                        </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Onq-aX-hbc">
-                            <rect key="frame" x="0.0" y="226" width="320" height="140"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
                             <subviews>
                                 <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aS-8m-XkR">
                                     <rect key="frame" x="15" y="10" width="290" height="40"/>
@@ -117,21 +88,16 @@
                             </constraints>
                         </view>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ATP-b6-247">
-                            <rect key="frame" x="0.0" y="376" width="320" height="1874"/>
+                            <rect key="frame" x="0.0" y="150" width="320" height="1850"/>
                             <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         </tableView>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="ssQ-lb-wbh" firstAttribute="top" secondItem="Ko8-OS-WMS" secondAttribute="bottom" constant="5" id="2yZ-Sg-aFp"/>
                         <constraint firstAttribute="trailing" secondItem="Onq-aX-hbc" secondAttribute="trailing" id="ELp-Jx-se8"/>
                         <constraint firstItem="ATP-b6-247" firstAttribute="leading" secondItem="QbV-V3-m3G" secondAttribute="leading" id="HXr-TD-K5c"/>
-                        <constraint firstItem="Ko8-OS-WMS" firstAttribute="leading" secondItem="QbV-V3-m3G" secondAttribute="leading" constant="15" id="Hft-BV-B6Q"/>
-                        <constraint firstAttribute="trailing" secondItem="ssQ-lb-wbh" secondAttribute="trailing" constant="15" id="IdJ-4W-pUM"/>
-                        <constraint firstItem="Onq-aX-hbc" firstAttribute="top" secondItem="ssQ-lb-wbh" secondAttribute="bottom" id="Mzh-0e-df4"/>
-                        <constraint firstItem="Ko8-OS-WMS" firstAttribute="top" secondItem="QbV-V3-m3G" secondAttribute="top" id="Qp9-Ty-BAi"/>
                         <constraint firstItem="Onq-aX-hbc" firstAttribute="leading" secondItem="QbV-V3-m3G" secondAttribute="leading" id="a0l-0U-bjL"/>
-                        <constraint firstAttribute="height" constant="2250" id="hnU-Ov-Ojt"/>
-                        <constraint firstItem="ssQ-lb-wbh" firstAttribute="leading" secondItem="QbV-V3-m3G" secondAttribute="leading" constant="15" id="jIc-Yr-5No"/>
+                        <constraint firstItem="Onq-aX-hbc" firstAttribute="top" secondItem="QbV-V3-m3G" secondAttribute="top" id="aqD-SZ-x0L"/>
+                        <constraint firstAttribute="height" constant="2000" id="hnU-Ov-Ojt"/>
                         <constraint firstItem="ATP-b6-247" firstAttribute="top" secondItem="Onq-aX-hbc" secondAttribute="bottom" constant="10" id="jhG-UN-zU1"/>
                         <constraint firstAttribute="bottom" secondItem="ATP-b6-247" secondAttribute="bottom" id="neK-fl-tfm"/>
                         <constraint firstAttribute="trailing" secondItem="ATP-b6-247" secondAttribute="trailing" id="xrp-I5-77N"/>

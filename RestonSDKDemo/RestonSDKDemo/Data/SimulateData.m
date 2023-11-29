@@ -74,7 +74,8 @@
     obj.arithmeticVer=@"";
     obj.eHumidityArray = [NSMutableArray arrayWithObjects:@(44), @(48), nil];
     obj.eTempArray = [NSMutableArray arrayWithObjects:@(25), @(27), nil];
-    
+    obj.tem = @"25~27";
+    obj.hum = @"44~48";
     obj.ahIndex = [NSNumber numberWithInteger:33];
     obj.ahiArrayStr = [self backBreathPauseTimes:@[@2316,@3639,@6,@4,@34,@29,@68,@34,@20]];
     obj.breathPauseAllTime = [NSNumber numberWithInteger:5506];

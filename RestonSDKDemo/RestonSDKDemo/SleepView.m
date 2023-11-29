@@ -452,11 +452,11 @@
                     [heartStopArr_ addObject:thisPoint];
                     [heartStopTimeArray_ addObject:[NSNumber numberWithInt:i]];
                 }
-                if (even & BREATH_STOP)//呼吸暂停
-                {
-                    [breathStopArr_ addObject:thisPoint];
-                    [huxiTimeArray addObject:[NSNumber numberWithInt:i]];
-                }
+//                if (even & BREATH_STOP)//呼吸暂停
+//                {
+//                    [breathStopArr_ addObject:thisPoint];
+//                    [huxiTimeArray addObject:[NSNumber numberWithInt:i]];
+//                }
                 if (even & LEFT_BED)//离床点
                 {
                     if (leftBedArr_.count % 2 == 0)

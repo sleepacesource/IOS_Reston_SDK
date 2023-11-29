@@ -71,7 +71,7 @@
     [self.getDeviceStatusBT setTitle:NSLocalizedString(@"obtain_working_state", nil) forState:UIControlStateNormal];
     [self.setAutoMonitorBT setTitle:NSLocalizedString(@"set_auto_monitor", nil) forState:UIControlStateNormal];
     [self.startCollectBT setTitle:NSLocalizedString(@"start_collection", nil) forState:UIControlStateNormal];
-    [self.stopCollectBT setTitle:NSLocalizedString(@"off_collection", nil) forState:UIControlStateNormal];
+    [self.stopCollectBT setTitle:NSLocalizedString(@"hand_stop_collect", nil) forState:UIControlStateNormal];
     [self.startRealtimeDataBT setTitle:NSLocalizedString(@"view_data", nil) forState:UIControlStateNormal];
     [self.stopRealtimeDataBT setTitle:NSLocalizedString(@"off_data", nil) forState:UIControlStateNormal];
     [self.checkSignalBT setTitle:NSLocalizedString(@"view_signal_strength", nil) forState:UIControlStateNormal];

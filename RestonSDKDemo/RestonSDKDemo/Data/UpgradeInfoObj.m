@@ -19,7 +19,7 @@
         upgradeInfo.crcDes=2539419916;
         upgradeInfo.crcBin=3855732355;
     }
-    else if ([numberString isEqualToString:@"22-3"])
+    else if ([numberString isEqualToString:@"47-3"])
     {
         NSString *filepath=[[NSBundle mainBundle] pathForResource:@"Z400T-2(Z400T&SW)-v1.39(v2.01.02b)-g-20231110" ofType:@"des"];
         upgradeInfo.package=[NSData dataWithContentsOfFile:filepath];

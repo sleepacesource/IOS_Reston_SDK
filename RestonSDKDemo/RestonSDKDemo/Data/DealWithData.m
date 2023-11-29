@@ -83,7 +83,7 @@
     NSString *temString=[NSString stringWithFormat:@"%@ ℃",obj.tem];
     NSString *humString=[NSString stringWithFormat:@"%@ %%",obj.hum];
     
-    //ahi
+    //AHI
     NSString *ahIndex = obj.ahIndex ? [NSString stringWithFormat:@"%@",obj.ahIndex] : NSLocalizedString(@"nothing", nil);
     NSString *ahiArrayStr = obj.ahiArrayStr ? [NSString stringWithFormat:@"%@",obj.ahiArrayStr] : NSLocalizedString(@"nothing", nil);
     NSString *breathPauseAllTime = obj.breathPauseAllTime ? [NSString stringWithFormat:@"%@ %@",obj.breathPauseAllTime,NSLocalizedString(@"unit_s", nil)]: NSLocalizedString(@"nothing", nil);

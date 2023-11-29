@@ -222,3 +222,6 @@
 "max_osa_duration"= "最长阻塞性暂停/低通气持续的时长";
 "unit_ahi"="次/时";
 "algorithm_version"="算法版本";
+"Apnea"="呼吸暂停";
+"md_leave_bed_decrease_scale"="睡觉起夜";
+"hand_stop_collect"="手动结束监测";

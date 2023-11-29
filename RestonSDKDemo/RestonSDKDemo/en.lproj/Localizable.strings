@@ -222,3 +222,6 @@
 "max_osa_duration"= "Max OSA Duration";
 "unit_ahi"="events/h";
 "algorithm_version"="Algorithm version";
+"respiration_pause"="Apnea";
+"md_leave_bed_decrease_scale"="Leave bed decrease";
+"hand_stop_collect"="Stop Collecting";

@@ -102,6 +102,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "Z400T-2"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
