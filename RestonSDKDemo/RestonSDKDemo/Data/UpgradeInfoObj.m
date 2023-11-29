@@ -21,10 +21,10 @@
     }
     else if ([numberString isEqualToString:@"22-3"])
     {
-        NSString *filepath=[[NSBundle mainBundle] pathForResource:@"Z400T-2_20200801_ReleaseFull_V1.02(2.0.3)" ofType:@"des"];
+        NSString *filepath=[[NSBundle mainBundle] pathForResource:@"Z400T-2(Z400T&SW)-v1.39(v2.01.02b)-g-20231110" ofType:@"des"];
         upgradeInfo.package=[NSData dataWithContentsOfFile:filepath];
-        upgradeInfo.crcDes=1113642742;
-        upgradeInfo.crcBin=2233826044;
+        upgradeInfo.crcDes=3266595119;
+        upgradeInfo.crcBin=1578783682;
     }
     else if ([numberString isEqualToString:@"22-4"])
     {

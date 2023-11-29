@@ -210,3 +210,15 @@
 "getting_real_time_data"="正在获取实时数据...";
 "temperature" = "温度";
 "humidity" = "湿度";
+"ahi"= "AHI值";
+"distribution_apnea_events"= "呼吸暂停次数分布";
+"head_apnea_duration"= "呼吸事件总持续时长";
+"head_apnea_events"= "呼吸事件总次数";
+"csa_duration"= "中枢性呼吸暂停持续时长";
+"events_of_csa"= "中枢性呼吸暂停次数";
+"max_csa_duration"= "最长中枢性呼吸暂停持续的时长";
+"osa_duration"= "阻塞性暂停/低通气持续时长";
+"events_of_osa"= "阻塞性暂停/低通气次数";
+"max_osa_duration"= "最长阻塞性暂停/低通气持续的时长";
+"unit_ahi"="次/时";
+"algorithm_version"="算法版本";

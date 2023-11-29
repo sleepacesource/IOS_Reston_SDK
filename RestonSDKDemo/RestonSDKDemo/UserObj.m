@@ -117,8 +117,8 @@
     
     self.wake_times = [NSNumber numberWithInt:0];
     
-    self.hxztcs= [NSNumber numberWithInt:0];  //呼吸暂停总次数
-    self.hxztsc= [NSNumber numberWithInt:0]; //呼吸暂停时长
+//    self.hxztcs= [NSNumber numberWithInt:0];  //呼吸暂停总次数
+//    self.hxztsc= [NSNumber numberWithInt:0]; //呼吸暂停时长
     self.xtztcs= [NSNumber numberWithInt:0]; //心跳暂停总次数
     self.xtztsc= [NSNumber numberWithInt:0]; //心跳暂停时长
     self.lccs= [NSNumber numberWithInt:0];   //离床次数

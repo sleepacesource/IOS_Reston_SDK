@@ -210,3 +210,15 @@
 "getting_real_time_data"="Getting real-time data";
 "temperature" = "Temperature";
 "humidity" = "Humidity";
+"ahi"= "AHI";
+"distribution_apnea_events"= "Distribution of apnea counts";
+"head_apnea_duration"= "Total duration of respiratory events";
+"head_apnea_events"= "Total number of respiratory events";
+"csa_duration"= "Duration of central apnea";
+"events_of_csa"= "Number of central apneas";
+"max_csa_duration"= "Max CSA Duration";
+"osa_duration"= "OSA Duration";
+"events_of_osa"= "Events of OSA";
+"max_osa_duration"= "Max OSA Duration";
+"unit_ahi"="events/h";
+"algorithm_version"="Algorithm version";

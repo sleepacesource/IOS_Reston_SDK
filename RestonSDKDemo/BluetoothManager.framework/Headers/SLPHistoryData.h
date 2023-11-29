@@ -25,11 +25,14 @@ typedef NS_ENUM(NSInteger,HistoryDataStopMode) {
 @end
 
 @interface HistoryDataSummary : NSObject
+@property (nonatomic,assign) NSInteger ahiFlag;//是否支持ahi的版本
 @property (nonatomic,assign) NSInteger deviceType;//设备类型
 @property (nonatomic,assign) NSInteger startTime;//开始睡觉的时间戳
 @property (nonatomic,assign) NSInteger recordCount;//睡觉总时间 单位:分钟
 @property (nonatomic,assign) NSInteger reportFlag;//长、短报告标识，1长报告  2短报告
 @property (nonatomic,assign) HistoryDataStopMode stopMode;//报告结束方式
+
+
 @end
 
 @interface HistoryDataDetail : NSObject

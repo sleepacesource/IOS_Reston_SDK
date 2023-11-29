@@ -85,7 +85,7 @@
     for (int i = 0; i < kColCout +1; i++)
     {
         NSDate *date = [NSDate dateWithTimeInterval:(i * fontWidth + self.x) * timeInterval sinceDate:startDate];
-        NSString *strDate = [ToolKit dateToNSString:date withFormat:@"h:mm" timeZone:iTimeZone];
+        NSString *strDate = [ToolKit dateToNSString:date withFormat:@"HH:mm" timeZone:iTimeZone];
         
         CGFloat x = 0;
         if (i == 0)

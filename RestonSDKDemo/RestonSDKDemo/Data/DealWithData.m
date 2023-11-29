@@ -29,6 +29,7 @@
     NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"HH:mm"];
     formatter.timeZone=[NSTimeZone localTimeZone];
+    formatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
     NSDate *confromTimesp = [NSDate dateWithTimeIntervalSince1970:[obj.startTime integerValue]];
     NSString *startTime = [formatter stringFromDate:confromTimesp];
     NSInteger startTimeNum=[[[startTime componentsSeparatedByString:@":"] objectAtIndex:0] integerValue]*60+[[[startTime componentsSeparatedByString:@":"] objectAtIndex:1] integerValue];
@@ -46,6 +47,7 @@
 
 +(NSArray *)backLongDataArray:(UserObj *)obj
 {
+    NSString * arithmeticVer = [NSString stringWithFormat:@"%@",obj.arithmeticVer];
     NSString *date=[NSString stringWithFormat:@"%@",obj.date];
     NSString *score=[NSString stringWithFormat:@"%@",obj.score];
     NSString *duration=[NSString stringWithFormat:@"%02d%@%02d%@",[obj.duration integerValue]/60,NSLocalizedString(@"unit_h", nil),[obj.duration integerValue]%60,NSLocalizedString(@"unit_m", nil)];
@@ -63,6 +65,7 @@
     
     NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"HH:mm"];
+    formatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
     formatter.timeZone=[NSTimeZone localTimeZone];
     NSDate *confromTimesp = [NSDate dateWithTimeIntervalSince1970:[obj.startTime integerValue]];
     NSString *startTime = [formatter stringFromDate:confromTimesp];
@@ -76,11 +79,29 @@
     NSString *remPre=[NSString stringWithFormat:@"%d%%",[obj.MdRemSleepPerc integerValue]];
     NSString *lightPre=[NSString stringWithFormat:@"%d%%",[obj.MdLightSleepPerc integerValue]];
     NSString *wakePre=[NSString stringWithFormat:@"%d%%",[obj.MdWakeSleepPerc integerValue]];
-    NSString *breathPauseStr=[NSString stringWithFormat:@"%@",obj.breathPauseTimeString.length?obj.breathPauseTimeString:NSLocalizedString(@"nothing", nil)];
+//    NSString *breathPauseStr=[NSString stringWithFormat:@"%@",obj.breathPauseTimeString.length?obj.breathPauseTimeString:NSLocalizedString(@"nothing", nil)];
     NSString *temString=[NSString stringWithFormat:@"%@ ℃",obj.tem];
     NSString *humString=[NSString stringWithFormat:@"%@ %%",obj.hum];
     
-    return  @[date,score,deArr,sleepTime,duration,asleepTime,averageHeartRate,averageBreathRate,breathPauseStr,deepPre,remPre,lightPre,wakePre,wakes,turnOver,bodyMovement,leaveBed,temString,humString];
+    //ahi
+    NSString *ahIndex = obj.ahIndex ? [NSString stringWithFormat:@"%@",obj.ahIndex] : NSLocalizedString(@"nothing", nil);
+    NSString *ahiArrayStr = obj.ahiArrayStr ? [NSString stringWithFormat:@"%@",obj.ahiArrayStr] : NSLocalizedString(@"nothing", nil);
+    NSString *breathPauseAllTime = obj.breathPauseAllTime ? [NSString stringWithFormat:@"%@ %@",obj.breathPauseAllTime,NSLocalizedString(@"unit_s", nil)]: NSLocalizedString(@"nothing", nil);
+    NSString *breathPauseTimes =obj.breathPauseTimes ? [NSString stringWithFormat:@"%@ %@",obj.breathPauseTimes,NSLocalizedString(@"unit_times", nil)]: NSLocalizedString(@"nothing", nil);
+    NSString *csaDur = obj.csaDur ? [NSString stringWithFormat:@"%@ %@",obj.csaDur,NSLocalizedString(@"unit_s", nil)]: NSLocalizedString(@"nothing", nil);
+    NSString *csaCnt = obj.csaCnt ? [NSString stringWithFormat:@"%@ %@",obj.csaCnt,NSLocalizedString(@"unit_times", nil)]: NSLocalizedString(@"nothing", nil);
+    NSString *csaMaxDur = obj.csaMaxDur ? [NSString stringWithFormat:@"%@ %@",obj.csaMaxDur,NSLocalizedString(@"unit_s", nil)]: NSLocalizedString(@"nothing", nil);
+    NSString *osaDur = obj.osaDur ? [NSString stringWithFormat:@"%@ %@",obj.osaDur,NSLocalizedString(@"unit_s", nil)]: NSLocalizedString(@"nothing", nil);
+    NSString *osaCnt = obj.osaCnt ? [NSString stringWithFormat:@"%@ %@",obj.osaCnt,NSLocalizedString(@"unit_times", nil)]: NSLocalizedString(@"nothing", nil);
+    NSString *osaMaxDur = obj.osaMaxDur ? [NSString stringWithFormat:@"%@ %@",obj.osaMaxDur,NSLocalizedString(@"unit_s", nil)]: NSLocalizedString(@"nothing", nil);
+    
+    if(obj.ahiFlag.boolValue){
+        return  @[date,score,deArr,sleepTime,duration,asleepTime,averageHeartRate,averageBreathRate,ahIndex,ahiArrayStr,breathPauseAllTime,breathPauseTimes,csaDur,csaCnt,csaMaxDur,osaDur,osaCnt,osaMaxDur,deepPre,remPre,lightPre,wakePre,wakes,bodyMovement,leaveBed,temString,humString,arithmeticVer];
+    }
+    else{
+        return  @[date,score,deArr,sleepTime,duration,asleepTime,averageHeartRate,averageBreathRate,ahIndex,ahiArrayStr,breathPauseAllTime,breathPauseTimes,csaDur,csaCnt,csaMaxDur,osaDur,osaCnt,osaMaxDur,deepPre,remPre,lightPre,wakePre,wakes,turnOver,bodyMovement,leaveBed,temString,humString,arithmeticVer];
+    }
+    
 }
 
 
