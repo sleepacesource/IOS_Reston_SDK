@@ -23,7 +23,7 @@
 + (NSArray *)backShortDataArray:(UserObj *)obj
 {
     NSString *date=[NSString stringWithFormat:@"%@",obj.date];
-    NSString *duration=[NSString stringWithFormat:@"%02d%@%02d%@",[obj.duration integerValue]/60,NSLocalizedString(@"unit_h", nil),[obj.duration integerValue]%60,NSLocalizedString(@"unit_m", nil)];
+    NSString *duration=[NSString stringWithFormat:@"%02d%@%02d%@",[obj.recordCount integerValue]/60,NSLocalizedString(@"unit_h", nil),[obj.recordCount integerValue]%60,NSLocalizedString(@"unit_m", nil)];
     NSString *averageHeartRate=[NSString stringWithFormat:@"%@ %@",obj.pjxl,NSLocalizedString(@"unit_heart", nil)];
     NSString *averageBreathRate=[NSString stringWithFormat:@"%@ %@",obj.pjhxl,NSLocalizedString(@"unit_respiration", nil)];
     NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
@@ -34,7 +34,7 @@
     NSString *startTime = [formatter stringFromDate:confromTimesp];
     NSInteger startTimeNum=[[[startTime componentsSeparatedByString:@":"] objectAtIndex:0] integerValue]*60+[[[startTime componentsSeparatedByString:@":"] objectAtIndex:1] integerValue];
     NSInteger startSleepTime=[obj.asleepTime integerValue]+startTimeNum;
-    NSInteger endSleepTime=[obj.duration integerValue]+[obj.asleepTime integerValue]+startTimeNum;
+    NSInteger endSleepTime=[obj.recordCount integerValue]+[obj.asleepTime integerValue]+startTimeNum;
     NSString *startTimeStr=[NSString stringWithFormat:@"%02d:%02d",startSleepTime/60>=24?startSleepTime/60-24:startSleepTime/60,startSleepTime%60];
     NSString *endTimeStr =[NSString stringWithFormat:@"%02d:%02d",endSleepTime/60>=24?endSleepTime/60-24:endSleepTime/60,endSleepTime%60];
      NSString *sleepTime=[NSString stringWithFormat:@"%@(%@)~%@(%@)",startTimeStr,NSLocalizedString(@"starting_point", nil),endTimeStr,NSLocalizedString(@"end_point", nil)];
