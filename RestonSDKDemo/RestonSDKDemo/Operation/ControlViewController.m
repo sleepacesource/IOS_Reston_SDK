@@ -34,6 +34,10 @@
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UILabel *label1;
 
+@property (weak, nonatomic) IBOutlet UILabel *humLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tepLabel;
+
+
 @end
 
 @implementation ControlViewController
@@ -78,6 +82,14 @@
     self.breathTitleLabel.text=NSLocalizedString(@"breathrate", nil);
     self.heartRateTitleLabel.text=NSLocalizedString(@"heartrate", nil);
     self.sleepStatusTitleLabel.text=NSLocalizedString(@"sleep_state", nil);
+    self.humLabel.text= [NSString stringWithFormat:@"%@:--",NSLocalizedString(@"humidity", nil)];
+    self.humLabel.textColor=[FontColor C3];
+    self.humLabel.font=[FontColor T3];
+    self.tepLabel.text= [NSString stringWithFormat:@"%@:--",NSLocalizedString(@"temperature", nil)];
+    self.tepLabel.textColor=[FontColor C3];
+    self.tepLabel.font=[FontColor T3];
+    
+    
     
     self.sleepStatusValueLabel.text=@"--";
     self.breathValueLabel.text=@"--";
@@ -259,6 +271,10 @@
         
         RestonRealTimeData *realData= [note.userInfo objectForKey:kNotificationPostData];
         NSLog(@"sleep status->%d,heartBeat-->%d,breath-->%d,temperture->%d,humidity->%d",realData.status,realData.heartRate,realData.breathRate,realData.temperture,realData.humidity);
+        
+        self.humLabel.text= [NSString stringWithFormat:@"%@:%d%%",NSLocalizedString(@"humidity", nil),realData.humidity];
+        self.tepLabel.text= [NSString stringWithFormat:@"%@:%d℃",NSLocalizedString(@"temperature", nil),realData.temperture];
+        
         NSString *b_value=[NSString stringWithFormat:@"%d %@",realData.heartRate,NSLocalizedString(@"unit_respiration", nil)];
         NSString *h_value=[NSString stringWithFormat:@"%d %@",realData.breathRate,NSLocalizedString(@"unit_heart", nil)];
         NSString *temperture_value=[NSString stringWithFormat:@"%d",realData.temperture];
